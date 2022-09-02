@@ -12,9 +12,13 @@
 
 欢迎点击此处访问[主页面](https://tcpuyuan.top)。
 
-## 参与贡献
+## 地理位置
 
 朴园，中国江苏太仓
+
+## 特殊情况
+
+境内请访问：[https://mihane_ichinose.gitee.io](https://mihane_ichinose.gitee.io)
 
 ## 作者
 
