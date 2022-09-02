@@ -13,4 +13,5 @@
 朴园，中国江苏太仓
 
 ## 作者
-[Mihane_Ichinose](https://github.com/mihane-ichinose)
+技术：[Mihane_Ichinose](https://github.com/mihane-ichinose)
+摄影：Laugence
