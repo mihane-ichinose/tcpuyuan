@@ -245,7 +245,7 @@ table p {
 
 .bg-img {
   background: no-repeat center center;
-  background-size: cover;
+  background-size:cover;
 }
 .bg-img.bg-img-top {
   background-position: top center;
