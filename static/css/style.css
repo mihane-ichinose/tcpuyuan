@@ -5900,6 +5900,8 @@ table p {
 }
 .project-details-area .gallery-item .thumb .lightbox-image img {
   width: 100%;
+  height: 570px;
+  object-fit: cover;
 }
 .project-details-area .gallery-item .thumb .overlay {
   -webkit-box-align: center;
@@ -7485,4 +7487,10 @@ table p {
 }
 .widget-gallery .gallery-slider-container .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #3045ff;
+}
+
+.small-img img{
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
 }
