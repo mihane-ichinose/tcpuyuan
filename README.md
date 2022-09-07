@@ -2,26 +2,52 @@
 
 ## 介绍
 
-太仓朴园主页面，介绍了朴园风光与历史背景，是一处金家代代相传的私人豪宅。
+朴园，位于上海市北郊，江苏境内，是金家代代相传的私家宅院。
+
+---
+
+## 朴园记
+
+    先有朴树，而后有朴园。
+
+    金氏子孙生于斯，至总角离乡，然游子飘摇，竹马之声依稀，故园荒草萧然，先祖音容犹在，老屋颓败见废。
+
+    遂于2015年暮春日起意造屋，而至有园，历时二年余。是时也，园主及妻、子安居于上海，每日工作忙碌，周末两地奔劳，四处筹划，造屋之难非言语可道一二。然造屋之举亦得天佑，于是年仲夏得以破土。又一年，竣工装修入住，后规划造园，百废待兴，终从百草园而变百花园。
+
+    先时荒园之时，后园赫立一朴树，无人刻意而栽，只是孕故土之精华，得天地之正气。今造屋之始，即立意以此树为名。老子曰“敦兮其若朴”，实因我辈读书立命，自强自立，契于“朴”之意，返归“朴”之味。以此志之，亦以诫后辈子孙：存诚朴之心，行俭朴之风，求质朴之道。
+
+    幸哉，朴园。
+
+---
 
 ## 架构
 
-从现在起由Gitee（码云）转换至GitHub仓库开发，因《不可抗力》（细品？）Gitee Pages关闭了自定义域名，并且阿里云域名需要备案才能跳转URL，故更改至GitHub Pages使用自定义域名完成CNAME解析访问。
+因Gitee Pages关闭了自定义域名，且阿里云域名需要备案才能跳转URL，从现在起由Gitee（码云）转换至GitHub仓库开发，更改至GitHub Pages使用自定义域名完成CNAME解析访问。
+
+基本静态HTML5页面，模板通过开源获取。
 
 ## 使用说明
 
-欢迎点击此处访问[主页面](https://tcpuyuan.top)。
+欢迎[点击此处](https://tcpuyuan.top)或者访问以下网址前往主页面：
+
+    https://tcpuyuan.top/
+
+境内请访问以下网址：
+
+    https://mihane_ichinose.gitee.io/
 
 ## 地理位置
 
 朴园，中国江苏太仓
 
-## 特殊情况
+## 版权声明
 
-境内请访问：[https://mihane_ichinose.gitee.io](https://mihane_ichinose.gitee.io)
+本项目为基于BSD 3-Clause的开源项目，有关更多详情见相关[版权文档](https://github.com/mihane-ichinose/tcpuyuan/blob/master/LICENSE)。
+
+本项目内的一切文章、照片等内容均为原创，归原作者及其组织所有，不得进行转载、抄袭。
 
 ## 作者
 
-技术：[Mihane_Ichinose](https://github.com/mihane-ichinose)
+技术支持：[Mihane_Ichinose](https://github.com/mihane-ichinose)
 
-摄影：Laugence
+摄影、文案：[Laugence](https://space.bilibili.com/1245522758)
