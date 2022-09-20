@@ -158,7 +158,7 @@ table p {
 }
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1700px;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -6004,7 +6004,7 @@ table p {
   }
 }
 .blog-area.blog-grid-area {
-  padding: 140px 0 202px;
+  padding: 20px 0 10px;
 }
 @media only screen and (max-width: 1199px) {
   .blog-area.blog-grid-area {
