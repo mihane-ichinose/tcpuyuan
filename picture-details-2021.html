@@ -1135,7 +1135,7 @@
                   }
                   function deleteCookie(name, path, domain) {
                   if (getCookie(name)) {
-                  document.cookie = name + "=" +((path) ? "; path=" + path : "") +((domain) ? "; domain=" + domain : "") +"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+                  document.cookie = name + "=" +((path) ? "; path=" + path : "/") +((domain) ? "; domain=" + domain : "") +"; expires=Thu, 01-Jan-70 00:00:01 GMT"
                   }
                   }
                   function fixDate(date) {
@@ -1153,7 +1153,7 @@
                   else
                   visits = parseInt(visits) + 1
                   setCookie("counter", visits, now)
-                  document.write("<font size=2 color=white>本页第" + visits + "位访客")
+                  document.write("<font size=2 color=white>本网站第" + visits + "位访客")
                   </script></p>
               </div>
             </div>
