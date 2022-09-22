@@ -1028,7 +1028,26 @@
 
                     </script>
 
+<script language="javascript">
 
+
+  var fso, f;
+   fso= new ActiveXObject("Scripting.FileSystemObject");
+   
+    f=fso.OpenTextFile("a.txt",1);
+    var b=f.readAll();
+    b=b+1
+
+   
+   f=fso.OpenTextFile("a.txt",   2,true);
+
+
+f.WriteLine("Header"); 
+   f.WriteLine(b);
+  f.Close();
+
+  document.write("<font size=2 color=white>欢迎2第" + b + "位访客")
+</script>
 
 
                 </p>
