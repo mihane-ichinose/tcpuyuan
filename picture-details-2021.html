@@ -1116,7 +1116,7 @@
                     
                   var caution = false
                   function setCookie(name, value, expires, path, domain, secure) {
-                  var curCookie = name + "=" + escape(value) +((expires) ? "; expires=" + expires.toGMTString() : "") +((path) ? "; path=" + path : "") +((domain) ? "; domain=" + domain : "") +((secure) ? "; secure" : "")
+                  var curCookie = name + "=" + escape(value) +((expires) ? "; expires=" + expires.toGMTString() : "") +((path) ? "; path=" + path : "/") +((domain) ? "; domain=" + domain : "") +((secure) ? "; secure" : "")
                   if (!caution || (name + "=" + escape(value)).length <= 4000)
                   document.cookie = curCookie
                   else if (confirm("Cookie exceeds 4KB and will be cut!"))
