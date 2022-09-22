@@ -1041,8 +1041,8 @@
   createXHR();//调用函数以创建XMLHttpRequest对象
 
   //使用XMLHttpRequest对象发送请求
-  xhr.open("get","index.json",false);//创建请求
- // xhr.send(null);//发送请求
+ xhr.open("get","./index.json",false);//创建请求
+ xhr.send(null);//发送请求
 
   //获取返回的json数据，
   var personStr=xhr.responseText;//返回的数据都是字符串，不具备对象方法
