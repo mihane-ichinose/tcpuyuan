@@ -1049,22 +1049,22 @@ var url="./index.json";
  xhr.send();//发送请求
 xhr.onload=function(){
   var counter=xhr.response
-  console.log(counter)
+  //console.log(counter)
 }
 
   //获取返回的json数据，
   var personStr=xhr.responseText;//返回的数据都是字符串，不具备对象方法
   
-  console.log(personStr);
+  //console.log(personStr);
   
   var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
-  console.log(per.counter)//25
+  //console.log(per.counter)//25
 
   alert(per.counter);
   
-        var newcounter = per["counter"]+1;
-        console.log(per.counter);
-        alert(per["counter"]);
+        var newcounter = per.counter+1;
+        //console.log(newcounter);
+        alert(newcounter);
 
         document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
 
