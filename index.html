@@ -1000,10 +1000,10 @@ request.open('GET',url);//创建请求
  //request.responseType="json";
  request.send();//发送请求
  //request.onload=function(){
-  var personStr=request.responseText;//返回的数据都是字符串，不具备对象方法
+  var personStr=request.response;//返回的数据都是字符串，不具备对象方法
   var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
   
-  var counter=request.response;
+ // var counter=request.response;
   //console.log(counter)
 
 //获取返回的json数据，
@@ -1025,13 +1025,13 @@ request.open('GET',url);//创建请求
     
 
 
-function saveHandler(){
+//function saveHandler(){
   let data={counter:newcounter};
   var content =JSON.stringify(data,null,4);
   alert(content);
   var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
   saveAs(blob,url);
-}
+//}
   
 
 </script>
