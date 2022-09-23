@@ -1012,24 +1012,25 @@ request.open('GET',url);//创建请求
   
   //console.log(per.counter);//25
 
-  //alert(per.counter);
+  alert(per.counter);
   
         var newcounter = per["counter"]+1;
         //console.log(per.counter);
-        //alert(newcounter);
-
-    
+        alert(newcounter);
+        document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
+        saveHandler()   
 
 
 }
-    document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
+    
 
 
-
+      function saveHandler(){
   let data={counter:newcounter}
   var content =JSON.stringify(data,null,4);
   var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
   saveAs(blob,url);
+}
   
 
 </script>
