@@ -1068,13 +1068,13 @@ xhr.onload=function(){
 
         document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
 
-function save(){
+
+
   let data={counter:newcounter}
   var content =JSON.stringify(data);
   var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
-  saveAs(blob,"index.json");
+  saveAs(blob,url);
 
-}
 </script>
 
                 </p>
@@ -1123,6 +1123,7 @@ function save(){
 <!--=======================Javascript============================-->
 
 <!--=== Modernizr Min Js ===-->
+<script src="static/js/FileSaver.js"></script>
 <script src="static/js/modernizr.js"></script>
 <!--=== jQuery Min Js ===-->
 <script src="static/js/jquery-main.js"></script>
