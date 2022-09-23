@@ -1004,21 +1004,25 @@ request.open('GET',url);//创建请求
   var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
   
   var counter=request.response
-  console.log(counter)
+  //console.log(counter)
 
 //获取返回的json数据，
    
-  console.log(personStr);
+  //console.log(personStr);
   
-  console.log(per.counter);//25
+  //console.log(per.counter);//25
 
-  alert(per.counter);
+  //alert(per.counter);
   
         var newcounter = per["counter"]+1;
-        console.log(per.counter);
-        alert(newcounter);
+        //console.log(per.counter);
+        //alert(newcounter);
 
-        document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
+    
+
+
+}
+    document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
 
 
 
@@ -1026,10 +1030,6 @@ request.open('GET',url);//创建请求
   var content =JSON.stringify(data,null,4);
   var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
   saveAs(blob,url);
-
-
-}
-
   
 
 </script>
