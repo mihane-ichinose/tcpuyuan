@@ -999,7 +999,7 @@ var url="./index.json";
 request.open('GET',url);//创建请求
  //request.responseType="json";
  request.send();//发送请求
- request.onload=function(){
+ //request.onload=function(){
   var personStr=request.responseText;//返回的数据都是字符串，不具备对象方法
   var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
   
@@ -1021,7 +1021,7 @@ request.open('GET',url);//创建请求
         //saveHandler();   
 
 
-}
+//}
     
 
 
