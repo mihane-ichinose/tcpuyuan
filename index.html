@@ -981,13 +981,13 @@
               <div class="widget-copyright">
                 <p><i class="fa fa-copyright"></i>Copyright &copy;2022, JST Auto. All rights reserved.
                 <script>
-  var xhr="";//声明变量容纳XMLHttpRequest对象
+  var request="";//声明变量容纳XMLHttpRequest对象
   //封装XMLHttpRequest对象创建方法（用于兼容低版本IE浏览器）
   function createXHR(){
       if(new window.XMLHttpRequest){//如果浏览器支持对象XMLHttpRequest
-          xhr=new XMLHttpRequest();
+        request=new XMLHttpRequest();
       }else{
-          xhr=new ActiveXObject("Microsoft.XMLH");//低版本IE使用ActiveXObject
+        request=new ActiveXObject("Microsoft.XMLH");//低版本IE使用ActiveXObject
       }
   }
   createXHR();//调用函数以创建XMLHttpRequest对象
@@ -996,21 +996,22 @@
 var url="./index.json";
 
   //使用XMLHttpRequest对象发送请求
- xhr.open('GET',url);//创建请求
- //xhr.responseType="json";
- xhr.send();//发送请求
-xhr.onload=function(){
-  var counter=xhr.response
+request.open('GET',url);//创建请求
+ //request.responseType="json";
+ request.send();//发送请求
+ request.onload=function(){
+  var personStr=request.responseText;//返回的数据都是字符串，不具备对象方法
+  var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
+  
+  var counter=request.response
   console.log(counter)
 }
 
   //获取返回的json数据，
-  var personStr=xhr.responseText;//返回的数据都是字符串，不具备对象方法
-  
+   
   console.log(personStr);
   
-  var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
-  console.log(per.counter)//25
+  console.log(per.counter);//25
 
   alert(per.counter);
   
@@ -1023,7 +1024,7 @@ xhr.onload=function(){
 
 
   let data={counter:newcounter}
-  var content =JSON.stringify(data);
+  var content =JSON.stringify(data,null,4);
   var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
   saveAs(blob,url);
 
