@@ -1006,28 +1006,22 @@
         //  console.log("结束");
         let data={counter:newcounter};
         var content =JSON.stringify(data,null,4);
-        var fs=require('fs');
-        fs.writeFile('./index.json',content,function(err){
-          if(err){console.error(err);
-          }
-          console('新增成功');
-        })
-
+       
         //alert(content);
 
         //var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
         //saveAs(blob,url);
-        /*$.ajax({
+        $.ajax({
           type:"POST",
           url:"index.json",
           data:content,
           contentType:"application/json;charset=utf-8",
-          dataType:"json",
+          dataType:'json',
           success:function(data){
              console.log(data);
           }
         })
-         */
+        
   
   } 
   }
