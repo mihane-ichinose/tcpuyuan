@@ -1026,6 +1026,16 @@
           }
         })
         */
+
+        function saveJSON(content, filename){
+          if(!content) { alert('保存的数据为空'); return; }
+           if(!filename) filename = 'index.json' 
+           if(typeof data === 'object'){ 
+            data = JSON.stringify(content, undefined, 4) } 
+            var blob = new Blob([content], {type: 'text/json'})
+           
+            }
+
   
   } 
   }
