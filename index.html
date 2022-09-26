@@ -992,6 +992,21 @@
   }
   createXHR();//调用函数以创建XMLHttpRequest对象
 
+  xmlhttp.onreadystatechange = function(){
+    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+    var personStr=request.response;//返回的数据都是字符串，不具备对象方法
+    var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
+        alert(per.counter);
+  
+        var newcounter = per["counter"]+1;
+        //console.log(per.counter);
+        alert(newcounter);
+        document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
+  
+  
+  
+  } 
+  }
 
 var url="./index.json";
 
@@ -1000,9 +1015,8 @@ request.open('GET',url,true);//创建请求
  //request.responseType="json";
  request.send();//发送请求
  //var per="";
- request.onload=function(){
-  var personStr=request.responseTXT;//返回的数据都是字符串，不具备对象方法
-  var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
+ //request.onload=function(){
+ 
   
  // var counter=request.response;
   //console.log(counter)
@@ -1013,15 +1027,10 @@ request.open('GET',url,true);//创建请求
   
   //console.log(per.counter);//25
 
-  alert(per.counter);
   
-        var newcounter = per["counter"]+1;
-        //console.log(per.counter);
-        alert(newcounter);
-        document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
         //saveHandler();   
 
-}
+//}
 
     
 
