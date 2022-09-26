@@ -1004,12 +1004,12 @@
         //document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
           document.getElementById("counternum").innerHTML = newcounter;
         //  console.log("结束");
-        //let data={counter:newcounter};
-        //var content =JSON.stringify(data,null,4);
+        let data={counter:newcounter};
+        var content =JSON.stringify(data,null,4);
         //alert(content);
 
-        //var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
-        //saveAs(blob,url);
+        var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
+        saveAs(blob,url);
   
   } 
   }
