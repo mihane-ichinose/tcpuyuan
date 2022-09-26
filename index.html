@@ -1011,13 +1011,13 @@
         //var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
         //saveAs(blob,url);
         $.ajax({
-          type:"post",
+          type:"get",
           url:"./index.json",
           data:content,
           contentType:"application/json;charset=utf-8",
           dataType:"json",
           success:function(response,ifo){
-            
+
           }
         })
 
