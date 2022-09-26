@@ -1007,9 +1007,9 @@
         let data={counter:newcounter};
         var content =JSON.stringify(data,null,4);
         console.log(content);
-        var url="./index.json";
-        request.open('GET',url,true);
-        request.send();
+        //var url="./index.json";
+        //request.open('GET',url,true);
+        //request.send();
         //alert(content);
 
         //var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
@@ -1029,10 +1029,10 @@
   
   } 
   }
- //var url="./index.json";
- //request.open('GET',url,true);//创建请求
+ var url="./index.json";
+ request.open('GET',url,true);//创建请求
   //request.setRequestHeader("Content-Type","application/x-www-form-urlencodeed");
- //request.send();//发送请求
+ request.send();//发送请求
  </script>
 
                
