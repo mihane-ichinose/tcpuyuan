@@ -979,7 +979,7 @@
           <div class="row text-center">
             <div class="col-sm-12">
               <div class="widget-copyright">
-                <p><i class="fa fa-copyright"></i>Copyright &copy;2022, JST Auto. All rights reserved.
+                <p><i class="fa fa-copyright"></i>Copyright &copy;2022, JST Auto. All rights reserved.欢迎第<p id="counternum">位访客</p>
                 <script>
   var request="";//声明变量容纳XMLHttpRequest对象
   //封装XMLHttpRequest对象创建方法（用于兼容低版本IE浏览器）
@@ -1001,8 +1001,9 @@
         var newcounter = per["counter"]+1;
         //console.log(per.counter);
         //alert(newcounter);
-        document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
-          console.log("结束");
+        //document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
+          document.getElementById("counternum").innerHTML = newcounter;
+        //  console.log("结束");
         //let data={counter:newcounter};
         //var content =JSON.stringify(data,null,4);
         //alert(content);
