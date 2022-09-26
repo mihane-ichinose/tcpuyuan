@@ -992,9 +992,9 @@
   }
   createXHR();//调用函数以创建XMLHttpRequest对象
 
-  xmlhttp.onreadystatechange = function(){
-    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-    var personStr=request.response;//返回的数据都是字符串，不具备对象方法
+  request.onreadystatechange = function(){
+    if(request.readyState == 4 && request.status == 200){
+    var personStr=request.responseText;//返回的数据都是字符串，不具备对象方法
     var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
         alert(per.counter);
   
