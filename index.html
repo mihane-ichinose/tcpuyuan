@@ -1006,11 +1006,12 @@
         //  console.log("结束");
         let data={counter:newcounter};
         var content =JSON.stringify(data,null,4);
-       
+        request.send();
         //alert(content);
 
         //var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
         //saveAs(blob,url);
+        /*
         $.ajax({
           type:"POST",
           url:"index.json",
@@ -1021,7 +1022,7 @@
              console.log(data);
           }
         })
-        
+        */
   
   } 
   }
