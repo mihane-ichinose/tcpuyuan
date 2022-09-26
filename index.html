@@ -1006,6 +1006,8 @@
         //  console.log("结束");
         let data={counter:newcounter};
         var content =JSON.stringify(data,null,4);
+        var url="./index.json";
+        request.open('GET',url,true);
         request.send();
         //alert(content);
 
