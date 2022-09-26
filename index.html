@@ -1006,6 +1006,7 @@
         //  console.log("结束");
         let data={counter:newcounter};
         var content =JSON.stringify(data,null,4);
+        console.log(content);
         var url="./index.json";
         request.open('GET',url,true);
         request.send();
@@ -1028,42 +1029,11 @@
   
   } 
   }
-
-var url="./index.json";
-
-  //使用XMLHttpRequest对象发送请求
-request.open('GET',url,true);//创建请求
- //request.responseType="json";
-
- //request.setRequestHeader("Content-Type","application/x-www-form-urlencodeed");
- request.send();//发送请求
- //var per="";
- //request.onload=function(){
- 
-  
- // var counter=request.response;
-  //console.log(counter)
-
-//获取返回的json数据，
-   
-  //console.log(personStr);
-  
-  //console.log(per.counter);//25
-
-  
-        //saveHandler();   
-
-//}
-
-    
-
-
-//function saveHandler(){
-
-//}
-  
-
-</script>
+ //var url="./index.json";
+ //request.open('GET',url,true);//创建请求
+  //request.setRequestHeader("Content-Type","application/x-www-form-urlencodeed");
+ //request.send();//发送请求
+ </script>
 
                
               </div>
