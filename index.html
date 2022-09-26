@@ -1006,7 +1006,7 @@
         //  console.log("结束");
         let data={counter:newcounter};
         var content =JSON.stringify(data,null,4);
-        
+        var fs=require('fs');
         fs.writeFile('./index.json',content,function(err){
           if(err){console.error(err);
           }
