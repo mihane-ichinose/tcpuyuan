@@ -996,14 +996,14 @@
 var url="./index.json";
 
   //使用XMLHttpRequest对象发送请求
-request.open('GET',url);//创建请求
+request.open('GET',url,true);//创建请求
  //request.responseType="json";
  request.send();//发送请求
- var per="";
+ //var per="";
  request.onload=function(){
-  var personStr=request.response;//返回的数据都是字符串，不具备对象方法
+  var personStr=request.responseTXT;//返回的数据都是字符串，不具备对象方法
   var per=JSON.parse(personStr);//使用JSON.parse方法将字符串数据转换为javascript对象
-  }
+  
  // var counter=request.response;
   //console.log(counter)
 
@@ -1013,15 +1013,15 @@ request.open('GET',url);//创建请求
   
   //console.log(per.counter);//25
 
-  //alert(per.counter);
+  alert(per.counter);
   
         var newcounter = per["counter"]+1;
         //console.log(per.counter);
-        //alert(newcounter);
+        alert(newcounter);
         document.write("<font size=2 color=white>欢迎第" + newcounter + "位访客");
         //saveHandler();   
 
-
+}
 
     
 
