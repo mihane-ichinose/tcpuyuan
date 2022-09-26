@@ -1006,21 +1006,24 @@
         //  console.log("结束");
         let data={counter:newcounter};
         var content =JSON.stringify(data,null,4);
+        
+
+
         //alert(content);
 
         //var blob=new Blob([content],{type:"text/plain;charset=utf-8"});
         //saveAs(blob,url);
         $.ajax({
-          type:"get",
+          type:"post",
           url:"./index.json",
           data:content,
           contentType:"application/json;charset=utf-8",
           dataType:"json",
-          success:function(response,ifo){
-
+          success:function(data){
+             console.log(data);
           }
         })
-
+         
   
   } 
   }
